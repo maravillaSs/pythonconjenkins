@@ -1,1 +1,1 @@
-echo "La salida a sido por shell script" $1 $2
+echo "La salida a sido por shell script $1 $2"
