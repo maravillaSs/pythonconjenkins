@@ -1,8 +1,8 @@
 def call( String host, String dias, String token ) {
-  final pythonContent = libraryResource('com/scotiabank/sharedlib/test.py')
-  writeFile(file: 'test.py', text: pythonContent)
+  final pythonContent = libraryResource('com/scotiabank/sharedlib/test.sh')
+  writeFile(file: 'test.sh', text: pythonContent)
   sh """
-     chmod +x test.py
-     echo "./test.py ${host} ${dias} ${token}"
+     chmod +x test.sh
+     ./test.sh ${host} ${dias} ${token}"
      """
 }
