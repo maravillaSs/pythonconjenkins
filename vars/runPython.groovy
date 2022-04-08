@@ -3,6 +3,6 @@ def call( String host, String dias, String token ) {
   writeFile(file: 'test.sh', text: pythonContent)
   sh """
      chmod +x test.sh
-     ./test.sh ${host} ${dias} ${token}"
+     ./test.sh ${host} ${dias} ${token}
      """
 }
